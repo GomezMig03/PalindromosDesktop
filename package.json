@@ -1,6 +1,6 @@
 {
   "name": "palindromosdestktop",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Proyecto de FreeCodeCamp para leer una cadena de texto y después comprobar si es o no palíndromo.",
   "main": "main.js",
   "dependencies": {
@@ -189,7 +189,8 @@
     "yauzl": "^2.10.0"
   },
   "devDependencies": {
-    "electron": "^28.1.1"
+    "electron": "^29.1.4",
+    "electron-builder": "^24.13.3"
   },
   "scripts": {
     "start": "electron .",
@@ -210,5 +211,6 @@
     "linux": {
       "icon": "Iconos/icon.png"
     }
-  }
+  },
+  "keywords": []
 }
