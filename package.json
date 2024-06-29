@@ -218,7 +218,6 @@
         "AppImage",
         "deb",
         "rpm",
-        "apk",
         "freebsd"
       ]
     },
