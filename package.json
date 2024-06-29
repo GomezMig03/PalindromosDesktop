@@ -189,7 +189,7 @@
     "yauzl": "^2.10.0"
   },
   "devDependencies": {
-    "electron": "^29.1.4",
+    "electron": "^29.4.3",
     "electron-builder": "^24.13.3"
   },
   "scripts": {
@@ -209,8 +209,33 @@
       "icon": "Iconos/icon.ico"
     },
     "linux": {
-      "icon": "Iconos/icon.png"
-    }
+      "icon": "Iconos/icon.png", 
+      "category": "Utility",
+      "executableName": "palindromosdesktop",
+      "artifactName": "${productName}-${version}-${arch}.${ext}",
+      "maintainer": "Miguel Gómez <gomezmig03@gmail.com>",
+      "target": [
+        "AppImage",
+        "deb",
+        "rpm",
+        "apk",
+        "freebsd"
+      ]
+    },
+    "deb": {
+        "depends": [
+          "libnotify4",
+          "libxtst6",
+          "libnss3"
+        ]
+      },
+      "rpm": {
+        "depends": [
+          "libnotify",
+          "libXtst",
+          "nss"
+        ]
+      }
   },
   "keywords": []
 }
